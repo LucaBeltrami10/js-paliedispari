@@ -54,13 +54,27 @@ function isPalindrome (itemA){
 
     const wordLength = itemA.lenght
     
-    for (i=0; i<itemA.lenght ; i++){
-        if (itemA[i] == itemA[itemA.lenght - i]){
-            console.log(`letter ${itemA[i]} is equal to ${itemA[itemA.lenght - i]}`)
+    /* for (i=0; i<wordLength ; i++){
+        if (itemA[i] == itemA[wordLength - i]){
+            console.log(`letter ${itemA[i]} is equal to ${itemA[wordLength - i]}`)
         } else{
             console.log('lettere non uguali')
         }
+    } */
+    
+    let isPalindrome = true
+    numA = 0
+    numB = wordLength - numA
+    while ( itemA[numA] == itemA[numB]){
+        if (itemA[numA] == itemA[numB]){
+            console.log(`letter ${itemA[numA]} is equal to ${itemA[numB]}`)
+        } else{
+            isPalindrome = false
+        }
     }
+
+    return isPalindrome
+
 }
 
 /* richiedo all'utente una parola */
