@@ -28,16 +28,17 @@ console.log(`l'utente ha scelto: ${inputUserOddOrEven}`)
 const inputUserNumber = parseInt(prompt('type a number from 1 to 5'))
 console.log(`l'utente ha inserito: ${inputUserNumber}`)
 
-/* applico funzioni*/
+/* applico funzioni per generare numero ai randomico e per elaborare se la somma dei numeri è Odd or even*/
 const outputAiNumber = randomNumberFromOneTo(5)
 console.log(`numero random pc: ${outputAiNumber}`)
 
 const sumOfNumber = inputUserNumber + outputAiNumber
 console.log(`somma dei numeri: ${sumOfNumber}`)
 
-let sumOfNumberOddOrEven = oddOrEven(sumOfNumber)
+let sumOfNumberIsOddOrEven = oddOrEven(sumOfNumber)
 
-if ( sumOfNumberOddOrEven == inputUserOddOrEven){
+/* mostro risultati */
+if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
     console.log('HAI VINTO!')
 }else{
     console.log('HAI PERSO!')
@@ -47,4 +48,3 @@ if ( sumOfNumberOddOrEven == inputUserOddOrEven){
 
 
 
-/* mostro risultati */
