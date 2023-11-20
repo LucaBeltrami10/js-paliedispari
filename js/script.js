@@ -4,6 +4,9 @@
 /* funzione numero random: 
 funzione in cui come argomenti inserisco i numeri estremi tra cui generare random da generare
 return: numero casuale generato*/
+function randomNumberFrom (numA, numB){
+    
+}
 
 /* funzione Odd or Even:
 funzione in cui sommo due numeri e li divido per due:
