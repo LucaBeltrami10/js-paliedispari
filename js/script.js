@@ -44,6 +44,7 @@ if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
     console.log('HAI PERSO!')
 }
 
+
 /* PALINDROMA */
 
 /* funzione */
@@ -52,33 +53,42 @@ creo un ciclo lungo come la parola
 verifico che la lettera al posto i sia uguale alla lettera al posto .length - i */
 function isPalindrome (itemA){
 
-    const wordLength = itemA.lenght
+    const wordLength = itemA.length
+    const lastLetterPosition = wordLength - 1
+
+    let isPalindrome = true
     
-    /* for (i=0; i<wordLength ; i++){
-        if (itemA[i] == itemA[wordLength - i]){
-            console.log(`letter ${itemA[i]} is equal to ${itemA[wordLength - i]}`)
+    for (i=0; i<wordLength ; i++){
+        if (itemA[i] == itemA[lastLetterPosition - i]){
+            console.log(`letter ${itemA[i]} is equal to ${itemA[lastLetterPosition - i]}`)
         } else{
             console.log('lettere non uguali')
-        }
-    } */
-
-
-    /* probabilmente da correggere con ciclo DO WHILE */
-    let isPalindrome = true
-
-    while ( itemA[numA] == itemA[numB]){
-        numA = 0
-        numB = wordLength - numA
-
-        if (itemA[numA] == itemA[numB]){
-            console.log(`letter ${itemA[numA]} is equal to ${itemA[numB]}`)
-            numA += 1
-        } else{
             isPalindrome = false
         }
     }
 
     return isPalindrome
+
+
+    /* probabilmente da correggere con ciclo DO WHILE */
+    /* let isPalindrome = true
+    let numA = 0
+    let numB = wordLength - 1
+    */
+
+    /* PROBLEMA: ARRIVATO AD UN CERTO PUNTO LA CONDIZIONE CONTINUA ALL'INFINITO  INDEFINITA = INDEFINITA */
+
+    /*do {
+        if (itemA[numA] == itemA[numB]){
+            console.log(`letter ${itemA[numA]} is equal to ${itemA[numB]}`)
+            numA += 1
+            numB -= 1
+        } else{
+            isPalindrome = false
+        }
+    } while (( itemA[numA] == itemA[numB]))
+
+    return isPalindrome */
 
 }
 
@@ -92,13 +102,17 @@ let isUserWordPalindrome = isPalindrome(userWord)
 
 /* mostro i risultati */
 
+/* if(isUserWordPalindrome == true){
+    console.log('la parola è palindroma')
+}else{
+    console.log('la parola NON è palindroma')
+} */
+
 if(isUserWordPalindrome == true){
     console.log('la parola è palindroma')
 }else{
     console.log('la parola NON è palindroma')
 }
-
-
 
 
 
