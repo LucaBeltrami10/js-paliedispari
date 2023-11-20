@@ -70,13 +70,12 @@ function isPalindrome (itemA){
     return isPalindrome
 
 
-    /* probabilmente da correggere con ciclo DO WHILE */
+    /* CICLO DO WHILE CON PROBLEMA */
     /* let isPalindrome = true
     let numA = 0
     let numB = wordLength - 1
     */
-
-    /* PROBLEMA: ARRIVATO AD UN CERTO PUNTO LA CONDIZIONE CONTINUA ALL'INFINITO  INDEFINITA = INDEFINITA */
+    /* PROBLEMA: ARRIVATO AD UN CERTO PUNTO, OLTRE LA LUNGHEZZA DELLA PAROLA, LA CONDIZIONE CONTINUA ALL'INFINITO  INDEFINITA = INDEFINITA */
 
     /*do {
         if (itemA[numA] == itemA[numB]){
@@ -89,25 +88,17 @@ function isPalindrome (itemA){
     } while (( itemA[numA] == itemA[numB]))
 
     return isPalindrome */
-
 }
 
-/* richiedo all'utente una parola */
 
+
+/* richiedo all'utente una parola */
 const userWord = prompt('type a word')
 
 /* uso funzione per verificare palindromia */
-
 let isUserWordPalindrome = isPalindrome(userWord)
 
 /* mostro i risultati */
-
-/* if(isUserWordPalindrome == true){
-    console.log('la parola è palindroma')
-}else{
-    console.log('la parola NON è palindroma')
-} */
-
 if(isUserWordPalindrome == true){
     console.log('la parola è palindroma')
 }else{
