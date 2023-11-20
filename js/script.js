@@ -24,12 +24,16 @@ function oddOrEven (numA){
 
 /* inserisco input utente per O or E, NUMERO + inserisco numero generato da pc */
 const inputUserOddOrEven = prompt('type odd or even')
+console.log(`l'utente ha scelto: ${inputUserOddOrEven}`)
 const inputUserNumber = parseInt(prompt('type a number from 1 to 5'))
+console.log(`l'utente ha inserito: ${inputUserNumber}`)
 
 /* applico funzioni*/
 const outputAiNumber = randomNumberFromOneTo(5)
+console.log(`numero random pc: ${outputAiNumber}`)
 
 const sumOfNumber = inputUserNumber + outputAiNumber
+console.log(`somma dei numeri: ${sumOfNumber}`)
 
 let sumOfNumberOddOrEven = oddOrEven(sumOfNumber)
 
