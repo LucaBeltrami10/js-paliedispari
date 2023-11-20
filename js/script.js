@@ -22,10 +22,17 @@ function oddOrEven (numA){
     }
 }
 
-/* inserisco input utente per O or E, NUMERO */
+/* inserisco input utente per O or E, NUMERO + inserisco numero generato da pc */
 const inputUserOddOrEven = prompt('type odd or even')
 const inputUserNumber = prompt('type a number from 1 to 5')
 
-/* applico funzioni */
+const outputAiNumber = randomNumberFromOneTo(5)
+
+/* applico funzioni*/
+
+
+
+
+
 
 /* mostro risultati */
