@@ -64,8 +64,9 @@ function isPalindrome (itemA){
 
 
     /* probabilmente da correggere con ciclo DO WHILE */
+    let isPalindrome = true
+
     while ( itemA[numA] == itemA[numB]){
-        let isPalindrome = true
         numA = 0
         numB = wordLength - numA
 
@@ -83,9 +84,19 @@ function isPalindrome (itemA){
 
 /* richiedo all'utente una parola */
 
+const userWord = prompt('type a word')
+
 /* uso funzione per verificare palindromia */
 
+let isUserWordPalindrome = isPalindrome(userWord)
+
 /* mostro i risultati */
+
+if(isUserWordPalindrome == true){
+    console.log('la parola è palindroma')
+}else{
+    console.log('la parola NON è palindroma')
+}
 
 
 
