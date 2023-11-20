@@ -51,7 +51,16 @@ if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
 creo un ciclo lungo come la parola
 verifico che la lettera al posto i sia uguale alla lettera al posto .length - i */
 function isPalindrome (itemA){
+
+    const wordLength = itemA.lenght
     
+    for (i=0; i<itemA.lenght ; i++){
+        if (itemA[i] == itemA[itemA.lenght - i]){
+            console.log(`letter ${itemA[i]} is equal to ${itemA[itemA.lenght - i]}`)
+        } else{
+            console.log('lettere non uguali')
+        }
+    }
 }
 
 /* richiedo all'utente una parola */
