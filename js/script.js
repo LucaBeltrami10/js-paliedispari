@@ -46,6 +46,17 @@ if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
 
 /* PALINDROMA */
 
+/* funzione */
+function isPalindrome (itemA){
+    
+}
+
+/* richiedo all'utente una parola */
+
+/* uso funzione per verificare palindromia */
+
+/* mostro i risultati */
+
 
 
 
