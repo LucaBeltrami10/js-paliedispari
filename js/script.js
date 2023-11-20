@@ -4,8 +4,9 @@
 /* funzione numero random: 
 funzione in cui come argomenti inserisco i numeri estremi tra cui generare random da generare
 return: numero casuale generato*/
-function randomNumberFrom (numA, numB){
-    
+function randomNumberFromOneTo (numA){
+    let randomNumber = Math.floor(Math.random() * numA) + 1
+    return randomNumber
 }
 
 /* funzione Odd or Even:
