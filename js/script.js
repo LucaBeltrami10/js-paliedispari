@@ -16,9 +16,9 @@ return: dispari se il resto è !0 */
 
 function oddOrEven (numA){
     if (numA % 2 == 0){
-        return odd
+        return 'odd'
     }else{
-        return even
+        return 'even'
     }
 }
 
