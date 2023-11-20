@@ -47,6 +47,9 @@ if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
 /* PALINDROMA */
 
 /* funzione */
+/* determino lunghezza della parola
+creo un ciclo lungo come la parola
+verifico che la lettera al posto i sia uguale alla lettera al posto .length - i */
 function isPalindrome (itemA){
     
 }
