@@ -61,13 +61,17 @@ function isPalindrome (itemA){
             console.log('lettere non uguali')
         }
     } */
-    
-    let isPalindrome = true
-    numA = 0
-    numB = wordLength - numA
+
+
+    /* probabilmente da correggere con ciclo DO WHILE */
     while ( itemA[numA] == itemA[numB]){
+        let isPalindrome = true
+        numA = 0
+        numB = wordLength - numA
+
         if (itemA[numA] == itemA[numB]){
             console.log(`letter ${itemA[numA]} is equal to ${itemA[numB]}`)
+            numA += 1
         } else{
             isPalindrome = false
         }
