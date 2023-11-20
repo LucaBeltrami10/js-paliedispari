@@ -16,20 +16,28 @@ return: dispari se il resto è !0 */
 
 function oddOrEven (numA){
     if (numA % 2 == 0){
-        return true
+        return odd
     }else{
-        return false
+        return even
     }
 }
 
 /* inserisco input utente per O or E, NUMERO + inserisco numero generato da pc */
 const inputUserOddOrEven = prompt('type odd or even')
-const inputUserNumber = prompt('type a number from 1 to 5')
-
-const outputAiNumber = randomNumberFromOneTo(5)
+const inputUserNumber = parseInt(prompt('type a number from 1 to 5'))
 
 /* applico funzioni*/
+const outputAiNumber = randomNumberFromOneTo(5)
 
+const sumOfNumber = inputUserNumber + outputAiNumber
+
+let sumOfNumberOddOrEven = oddOrEven(sumOfNumber)
+
+if ( sumOfNumberOddOrEven == inputUserOddOrEven){
+    console.log('HAI VINTO!')
+}else{
+    console.log('HAI PERSO!')
+}
 
 
 
