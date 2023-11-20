@@ -100,9 +100,9 @@ let isUserWordPalindrome = isPalindrome(userWord)
 
 /* mostro i risultati */
 if(isUserWordPalindrome == true){
-    console.log('la parola è palindroma')
+    console.log('LA PAROLA è PALINDROMA!')
 }else{
-    console.log('la parola NON è palindroma')
+    console.log('la parola NON è palindroma!')
 }
 
 
