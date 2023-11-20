@@ -44,6 +44,8 @@ if ( sumOfNumberIsOddOrEven == inputUserOddOrEven){
     console.log('HAI PERSO!')
 }
 
+/* PALINDROMA */
+
 
 
 
