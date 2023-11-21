@@ -85,7 +85,7 @@ function isPalindrome (itemA){
         } else{
             isPalindrome = false
         }
-    } while (( itemA[numA] == itemA[numB]))
+    } while (( itemA[numA] == itemA[numB] || numA < word.lenght))
 
     return isPalindrome */
 }
